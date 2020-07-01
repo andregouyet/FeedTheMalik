@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSxK54SVm-Fxs8qD1kqh1jwEQncrPO2d7JFWgmxZ4V5JQML887-RyKWl5ioKT6sf8fdjAHrfRqD0OHk/pub?output=csv',
+        url: 'https://docs.google.com/spreadsheets/d/10OLzIwrTU2BhdFUNwINZbBvr5BdVb5p5l12p_UZ4pEU/gviz/tq?tqx=out:csv&sheet=FeedTheMalik',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
