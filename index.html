@@ -95,9 +95,9 @@
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/andregoo/ckb5kfjse34nn1io7pdx1be8v', //stylesheet location
-      center: [-74.5, 40], // starting position
-      zoom: 5,// starting zoom
-      transformRequest: transformRequest
+//       center: [-74.5, 40], // starting position
+//       zoom: 5,// starting zoom
+//       transformRequest: transformRequest
     });
 
     $(document).ready(function () {
@@ -169,8 +169,8 @@
               map.getCanvas().style.cursor = '';
             });
 
-//             var bbox = turf.bbox(data);
-//             map.fitBounds(bbox, { padding: 50 });
+            var bbox = turf.bbox(data);
+            map.fitBounds(bbox, { padding: 50 });
 
           });
 
